@@ -20,3 +20,17 @@ Por defecto, Github Pages aloja los sitios web bajo el dominio =github.io=; sin 
 #+BEGIN_COMMENT
 Incluir información sobre cómo [[https://docs.github.com/en/articles/using-a-custom-domain-with-github-pages][utilizar un dominio personalizado con GitHub Pages]].
 #+END_COMMENT
+
+* Tipos de sitios en GitHub Pages
+
+Existen tres tipos de sitios web para GitHub Pages: sitios de proyecto, de usuario y de organización. Los sitios de proyecto están conectados a un proyecto específico alojado en [[https://github.com][GitHub]], como una librería JavaScript o una colección de recetas. Los sitios de usuario u organización están conectados a una cuenta específica en GitHub.com.
+
+Sólo es posible crear un sitio de usuario u organización por cada cuenta en GitHub. Los sitios de proyectos, ya sean propiedad de una organización o de una cuenta personal, son ilimitados.
+
+** Páginas de usuario u organización
+
+Para publicar una /página de usuario o de organización/, es necesario crear un repositorio en GitHub llamado =nombredeusuario.github.io= donde =nombredeusuario= es reemplazado por su nombre de usuario en GitHub.
+
+** Páginas de proyecto
+
+Las /páginas de proyecto/ son diferentes a las /páginas de usuario o de organización/ en el sentido de que todos los archivos relacionados con la creación de la página web deben ubicarse en una rama especial llamada rama *gh-pages* (y no en la rama principal *main* / *master* como en el caso de una página de usuario). Cabe destacar que para generar una página de proyecto, no resulta necesaria la creación de esta última, sin embargo, la dirección URL seguirá siendo =nombredeusuario.github.io= aunado al nombre del repositorio que alberga al proyecto, por ejemplo: =miasombrosoproyecto=, quedando en este caso la dirección URL de la siguiente manera: =nombredeusuario.github.io/miasombrosoproyecto=.
