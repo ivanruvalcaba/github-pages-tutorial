@@ -121,5 +121,4 @@ $RECYCLE.BIN/
 ### Spacemacs ###
 *.temp
 
-### org-preview-html ###
-*.html
+public/

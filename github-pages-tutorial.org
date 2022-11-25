@@ -4,7 +4,7 @@
 #+LANGUAGE: es
 #+AUTHOR: Iván Ruvalcaba
 #+EMAIL: ivanruvalcaba@disroot.org
-#+EXPORT_FILE_NAME: ./index.html
+#+EXPORT_FILE_NAME: ./public/index.html
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+HTML_HEAD: <link rel="icon" type="image/x-icon" href="https://develop.spacemacs.org/favicon.ico" />
 #+HTML_HEAD: <style>#content{max-width:1800px;}</style>
