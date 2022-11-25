@@ -1,0 +1,22 @@
+#+TITLE: Tutorial sobre GitHub Pages
+#+DESCRIPTION: Tutorial sobre GitHub Pages
+#+KEYWORDS: github pages,tutorial
+#+LANGUAGE: es
+#+AUTHOR: Iván Ruvalcaba
+#+EMAIL: ivanruvalcaba@disroot.org
+#+EXPORT_FILE_NAME: ./index.html
+#+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
+#+HTML_HEAD: <link rel="icon" type="image/x-icon" href="https://develop.spacemacs.org/favicon.ico" />
+#+HTML_HEAD: <style>#content{max-width:1800px;}</style>
+#+HTML_HEAD: <style>p{max-width:800px;}</style>
+#+HTML_HEAD: <style>li{max-width:800px;}</style>
+
+* Acerca de Github Pages
+
+/GitHub Pages/ es un servicio de alojamiento de páginas web estáticas que recopila archivos HTML, CSS y JavaScript directamente desde un repositorio albergado en GitHub, opcionalmente procesa estos archivos a través de un proceso de construcción, para posteriormente publicarlos como un sitio web.
+
+Por defecto, Github Pages aloja los sitios web bajo el dominio =github.io=; sin embargo, es posible utilizar su propio dominio personalizado si así lo prefiere.
+
+#+BEGIN_COMMENT
+Incluir información sobre cómo [[https://docs.github.com/en/articles/using-a-custom-domain-with-github-pages][utilizar un dominio personalizado con GitHub Pages]].
+#+END_COMMENT
