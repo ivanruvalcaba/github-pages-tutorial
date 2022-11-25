@@ -13,7 +13,13 @@
 
 * Introducción
 
-En el presente tutorial se mostrará el procedimiento a seguir para la publicación en GitHub Pages de documentos creados en [[https://wikiless.org/wiki/Org-mode?lang=es][Org-mode]].
+En el presente tutorial se mostrará el procedimiento a seguir para la publicación en GitHub Pages de documentos creados en [[https://wikiless.org/wiki/Org-mode?lang=es][Org-mode]].
+
+** Requerimientos
+
+- Disponer de una cuenta de usuario en /GitHub.com/.
+- Estar familiarizado con el uso desde la línea de comandos de la utilidad =git=, tanto para la creación, manejo y gestión de repositorios.
+- Nociones previas en la utilización de /Emacs / Org-mode/.
 
 * Acerca de Github Pages
 
