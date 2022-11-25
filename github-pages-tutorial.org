@@ -1,6 +1,6 @@
-#+TITLE: Tutorial sobre GitHub Pages
+#+TITLE: Cómo publicar de forma automatizada sitios web en GitHub Pages utilizando Emacs y Org-mode
 #+DESCRIPTION: Tutorial sobre GitHub Pages
-#+KEYWORDS: github pages,tutorial
+#+KEYWORDS: tutorial,github-pages,emacs,org-mode
 #+LANGUAGE: es
 #+AUTHOR: Iván Ruvalcaba
 #+EMAIL: ivanruvalcaba@disroot.org
@@ -11,12 +11,16 @@
 #+HTML_HEAD: <style>p{max-width:800px;}</style>
 #+HTML_HEAD: <style>li{max-width:800px;}</style>
 
+* Introducción
+
+En el presente tutorial se mostrará el procedimiento a seguir para la publicación en GitHub Pages de documentos creados en [[https://wikiless.org/wiki/Org-mode?lang=es][Org-mode]].
+
 * Acerca de Github Pages
 
-/GitHub Pages/ es un servicio de alojamiento de páginas web estáticas que recopila archivos HTML, CSS y JavaScript directamente desde un repositorio albergado en GitHub, existiendo la posibilidad de que el servicio ejecute de forma opcional estos archivos a través de un proceso de construcción, para posteriormente publicarlos como un sitio web.
+/GitHub Pages/ es un servicio de alojamiento de sitios web estáticos que recaba archivos HTML, CSS y JavaScript directamente desde un repositorio albergado en GitHub, ofreciendo la posibilidad de procesar de forma opcional dichos archivos por medio de la ejecución de un proceso de construcción, para posteriormente publicarlos como un sitio web.
 
 #+BEGIN_QUOTE
-*Nota:* Por defecto, Github Pages aloja la totalidad de sus sitios web bajo el nombre de dominio =github.io=; sin embargo, es posible reemplazarlo por uno propio si así se desea.
+*Importante:* Por defecto, Github Pages aloja la totalidad de sus sitios web bajo el nombre de dominio =github.io=; sin embargo, es posible reemplazarlo por un dominio propio si así se desea.
 #+END_QUOTE
 
 #+BEGIN_COMMENT
