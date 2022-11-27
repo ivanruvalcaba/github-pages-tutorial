@@ -15,11 +15,19 @@
 
 En el presente tutorial se mostrará el procedimiento a seguir para la publicación en GitHub Pages de documentos creados en [[https://wikiless.org/wiki/Org-mode?lang=es][Org-mode]].
 
+* Flujo de trabajo
+
+El resultado al que se pretende llegar al seguir el procedimiento aquí propuesto será: establecer una configuración de construcción para que su sitio web se publique automáticamente cada vez que se empuje una confirmación a su repositorio.
+
+Esto es posible a través de la utilización de un servicio de «integración continua» como [[https://github.com/features/actions][GitHub Actions]]. Este tipo de servicio le permite ejecutar un script de construcción para su repositorio en una máquina en la nube para que pueda hacer cosas como ejecutar pruebas en el código o, como en este caso, publicar un sitio web.
+
 ** Requerimientos
 
 - Disponer de una cuenta de usuario en /GitHub.com/.
 - Estar familiarizado con el uso desde la línea de comandos de la utilidad =git=, tanto para la creación, manejo y gestión de repositorios.
 - Nociones previas en la utilización de /Emacs / Org-mode/.
+
+** Estructura del repositorio
 
 * Acerca de Github Pages
 
