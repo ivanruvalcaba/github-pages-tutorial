@@ -3,7 +3,7 @@
 "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" lang="es" xml:lang="es">
 <head>
-<!-- 2022-11-25 Fri 21:21 -->
+<!-- 2022-11-27 Sun 14:08 -->
 <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Cómo publicar de forma automatizada sitios web en GitHub Pages utilizando Emacs y Org-mode</title>
@@ -76,54 +76,95 @@ for the JavaScript code in this tag.
 <h2>&Iacute;ndice</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org5fe8839">1. Introducción</a>
+<li><a href="#org279358e">1. Introducción</a></li>
+<li><a href="#org4391972">2. Flujo de trabajo</a></li>
+<li><a href="#orgc47dc0e">3. Requerimientos</a>
 <ul>
-<li><a href="#org50b749d">1.1. Requerimientos</a></li>
+<li><a href="#org2fdd849">3.1. Estructura del repositorio local</a></li>
 </ul>
 </li>
-<li><a href="#org19c81bf">2. Acerca de Github Pages</a></li>
+<li><a href="#orgf98f0f0">4. Apéndice</a>
+<ul>
+<li><a href="#orgb0cb3ee">4.1. Acerca de Github Pages</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
 
-<div id="outline-container-org5fe8839" class="outline-2">
-<h2 id="org5fe8839"><span class="section-number-2">1</span> Introducción</h2>
+<div id="outline-container-org279358e" class="outline-2">
+<h2 id="org279358e"><span class="section-number-2">1</span> Introducción</h2>
 <div class="outline-text-2" id="text-1">
 <p>
 En el presente tutorial se mostrará el procedimiento a seguir para la publicación en GitHub Pages de documentos creados en <a href="https://wikiless.org/wiki/Org-mode?lang=es">Org-mode</a>.
 </p>
 </div>
+</div>
 
-<div id="outline-container-org50b749d" class="outline-3">
-<h3 id="org50b749d"><span class="section-number-3">1.1</span> Requerimientos</h3>
-<div class="outline-text-3" id="text-1-1">
+<div id="outline-container-org4391972" class="outline-2">
+<h2 id="org4391972"><span class="section-number-2">2</span> Flujo de trabajo</h2>
+<div class="outline-text-2" id="text-2">
+<p>
+El resultado al que se pretende llegar al seguir el procedimiento aquí propuesto será: establecer una configuración de construcción para que su sitio web se publique automáticamente cada vez que se empuje una confirmación a su repositorio.
+</p>
+
+<p>
+Esto es posible a través de la utilización de un servicio de «integración continua» como <a href="https://github.com/features/actions">GitHub Actions</a>. Este tipo de servicio le permite ejecutar un script de construcción para su repositorio en una máquina en la nube para que pueda hacer cosas como ejecutar pruebas en el código o, como en este caso, publicar un sitio web.
+</p>
+</div>
+</div>
+
+<div id="outline-container-orgc47dc0e" class="outline-2">
+<h2 id="orgc47dc0e"><span class="section-number-2">3</span> Requerimientos</h2>
+<div class="outline-text-2" id="text-3">
 <ul class="org-ul">
-<li>Disponer de una cuenta de usuario en <i>GitHub.com</i>.</li>
+<li>Contar con una cuenta de usuario en <i>GitHub.com</i>.</li>
 <li>Estar familiarizado con el uso desde la línea de comandos de la utilidad <code>git</code>, tanto para la creación, manejo y gestión de repositorios.</li>
 <li>Nociones previas en la utilización de <i>Emacs / Org-mode</i>.</li>
 </ul>
 </div>
-</div>
-</div>
 
-<div id="outline-container-org19c81bf" class="outline-2">
-<h2 id="org19c81bf"><span class="section-number-2">2</span> Acerca de Github Pages</h2>
-<div class="outline-text-2" id="text-2">
+<div id="outline-container-org2fdd849" class="outline-3">
+<h3 id="org2fdd849"><span class="section-number-3">3.1</span> Estructura del repositorio local</h3>
+<div class="outline-text-3" id="text-3-1">
 <p>
-<i>GitHub Pages</i> es un servicio de alojamiento de sitios web estáticos que recaba archivos HTML, CSS y JavaScript directamente desde un repositorio albergado en GitHub, ofreciendo la posibilidad de procesar de forma opcional dichos archivos por medio de la ejecución de un proceso de construcción, para posteriormente publicarlos como un sitio web.
+A continuación se describe la estructura mínima necesaria para los directorios que albergarán los diferentes archivos de configuración requeridos en el desarrollo del presente tutorial, así como también, el directorio que contendrá el documento HTML resultante del proceso de exportar desde Org-mode:
 </p>
 
+<pre class="example">
+.
+├───.github
+│   └───workflows
+├───public
+└───scripts
+</pre>
+</div>
+</div>
+</div>
+
+<div id="outline-container-orgf98f0f0" class="outline-2">
+<h2 id="orgf98f0f0"><span class="section-number-2">4</span> Apéndice</h2>
+<div class="outline-text-2" id="text-4">
+</div>
+<div id="outline-container-orgb0cb3ee" class="outline-3">
+<h3 id="orgb0cb3ee"><span class="section-number-3">4.1</span> Acerca de Github Pages</h3>
+<div class="outline-text-3" id="text-4-1">
 <blockquote>
 <p>
 <b>Importante:</b> Por defecto, Github Pages aloja la totalidad de sus sitios web bajo el nombre de dominio <code>github.io</code>; sin embargo, es posible reemplazarlo por un dominio propio si así se desea.
 </p>
 </blockquote>
+
+<p>
+<i>GitHub Pages</i> es un servicio de alojamiento de sitios web estáticos que recaba archivos HTML, CSS y JavaScript directamente desde un repositorio albergado en GitHub, ofreciendo la posibilidad de procesar de forma opcional dichos archivos por medio de la ejecución de un proceso de construcción, para posteriormente publicarlos como un sitio web.
+</p>
+</div>
 </div>
 </div>
 </div>
 <div id="postamble" class="status">
 <p class="author">Autor: Iván Ruvalcaba</p>
-<p class="date">Created: 2022-11-25 Fri 21:21</p>
+<p class="date">Created: 2022-11-27 Sun 14:08</p>
 <p class="validation"><a href="http://validator.w3.org/check?uri=referer">Validate</a></p>
 </div>
 </body>
