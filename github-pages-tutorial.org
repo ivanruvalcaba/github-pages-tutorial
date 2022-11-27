@@ -43,11 +43,11 @@ A continuación se describe la estructura mínima necesaria para los directorios
 
 ** Acerca de Github Pages
 
-/GitHub Pages/ es un servicio de alojamiento de sitios web estáticos que recaba archivos HTML, CSS y JavaScript directamente desde un repositorio albergado en GitHub, ofreciendo la posibilidad de procesar de forma opcional dichos archivos por medio de la ejecución de un proceso de construcción, para posteriormente publicarlos como un sitio web.
-
 #+BEGIN_QUOTE
 *Importante:* Por defecto, Github Pages aloja la totalidad de sus sitios web bajo el nombre de dominio =github.io=; sin embargo, es posible reemplazarlo por un dominio propio si así se desea.
 #+END_QUOTE
+
+/GitHub Pages/ es un servicio de alojamiento de sitios web estáticos que recaba archivos HTML, CSS y JavaScript directamente desde un repositorio albergado en GitHub, ofreciendo la posibilidad de procesar de forma opcional dichos archivos por medio de la ejecución de un proceso de construcción, para posteriormente publicarlos como un sitio web.
 
 #+BEGIN_COMMENT
 Incluir información sobre cómo [[https://docs.github.com/en/articles/using-a-custom-domain-with-github-pages][utilizar un dominio personalizado con GitHub Pages]].
