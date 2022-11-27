@@ -21,15 +21,25 @@ El resultado al que se pretende llegar al seguir el procedimiento aquí propuest
 
 Esto es posible a través de la utilización de un servicio de «integración continua» como [[https://github.com/features/actions][GitHub Actions]]. Este tipo de servicio le permite ejecutar un script de construcción para su repositorio en una máquina en la nube para que pueda hacer cosas como ejecutar pruebas en el código o, como en este caso, publicar un sitio web.
 
-** Requerimientos
+* Requerimientos
 
-- Disponer de una cuenta de usuario en /GitHub.com/.
+- Contar con una cuenta de usuario en /GitHub.com/.
 - Estar familiarizado con el uso desde la línea de comandos de la utilidad =git=, tanto para la creación, manejo y gestión de repositorios.
 - Nociones previas en la utilización de /Emacs / Org-mode/.
 
-** Estructura del repositorio
+** Estructura del repositorio local
 
-* Acerca de Github Pages
+#+BEGIN_SRC
+  .
+  ├───.github
+  │   └───workflows
+  ├───public
+  └───scripts
+#+END_SRC
+
+* Apéndice
+
+** Acerca de Github Pages
 
 /GitHub Pages/ es un servicio de alojamiento de sitios web estáticos que recaba archivos HTML, CSS y JavaScript directamente desde un repositorio albergado en GitHub, ofreciendo la posibilidad de procesar de forma opcional dichos archivos por medio de la ejecución de un proceso de construcción, para posteriormente publicarlos como un sitio web.
 
@@ -39,4 +49,8 @@ Esto es posible a través de la utilización de un servicio de «integración co
 
 #+BEGIN_COMMENT
 Incluir información sobre cómo [[https://docs.github.com/en/articles/using-a-custom-domain-with-github-pages][utilizar un dominio personalizado con GitHub Pages]].
+#+END_COMMENT
+
+#+BEGIN_COMMENT
+Incluir información sobre [[https://github.com/features/actions][GitHub Actions]].
 #+END_COMMENT
