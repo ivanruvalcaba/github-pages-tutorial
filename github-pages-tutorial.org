@@ -29,6 +29,8 @@ Esto es posible a través de la utilización de un servicio de «integración co
 
 ** Estructura del repositorio local
 
+A continuación se describe la estructura mínima necesaria para los directorios que albergarán los diferentes archivos de configuración requeridos en el desarrollo del presente tutorial, así como también, el directorio que contendrá el documento HTML resultante del proceso de exportar desde Org-mode:
+
 #+BEGIN_SRC
   .
   ├───.github
